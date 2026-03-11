@@ -1,0 +1,13 @@
+﻿{
+  "name": "distributed-ci-intel-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "postinstall": "echo 'Run npm install in frontend/ and backend/'",
+    "dev": "echo 'Use: npm --workspace backend run dev & npm --workspace frontend run dev'",
+    "build": "npm -w backend run build && npm -w frontend run build"
+  }
+}
