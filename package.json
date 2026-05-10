@@ -6,8 +6,15 @@
     "backend"
   ],
   "scripts": {
-    "postinstall": "echo 'Run npm install in frontend/ and backend/'",
-    "dev": "echo 'Use: npm --workspace backend run dev & npm --workspace frontend run dev'",
-    "build": "npm -w backend run build && npm -w frontend run build"
-  }
+    "dev:all": "turbo dev",
+    "build:all": "turbo build",
+    "lint:all": "turbo lint",
+    "test:all": "turbo test"
+  },
+
+
+  "devDependencies": {
+    "turbo": "latest"
+  },
+  "packageManager": "npm@10.8.2"
 }
